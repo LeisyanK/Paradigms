@@ -1,6 +1,5 @@
 # imperative
 def Partition(array, l, r):
-    print("----")
     x = array[r]  # опорный элемент
     begin = l
     for i in range(l, r):
@@ -24,12 +23,23 @@ def QuickSort(array, l ,r):
 
 
 array = [6, 4, 9, 3, 2, 9, 1, 7]
+print("Массив:")
+for num in array:
+    print(num, end=" ")
+print()
+
 # declarative
 array2 = sorted(array)
+print("Декларативная парадигма:")
 for num in array2:
-    print(num)
+    print(num, end=" ")
+print()
 
 # imperative
 size = len(array)
 if (size > 0):
     QuickSort(array, 0, size - 1)
+    print("Императивная парадигма:")
+for num in array:
+    print(num, end=" ")
+print()
