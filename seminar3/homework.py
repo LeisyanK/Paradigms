@@ -51,6 +51,7 @@ counter = 0
 flag = True
 while flag:  # flag = True - никто не выиграл
     # print(player)
+    #################### ХОД БОТА ####################
     if player == 2:
         x = random.randint(1, 3)
         y = random.randint(1, 3)
